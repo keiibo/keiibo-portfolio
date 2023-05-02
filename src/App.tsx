@@ -2,8 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Header/Navbar";
 import Error from "./Component/Error";
-import Home from "./Component/Top";
-import "./Style/App.scss";
+import Top from "./Component/Top";
 
 function App() {
   return (
@@ -12,7 +11,7 @@ function App() {
         <Navbar /> {/* ナビバーのコンポーネント */}
         <Routes>
           {/* ルーティングの制御が行える */}
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Top />} />
           {/* <Route path="/about" element={<About />} /> */}
           {/* <Route path="/works" element={<Works />} /> */}
 
