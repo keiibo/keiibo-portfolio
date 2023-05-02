@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Header/Navbar";
 import Error from "./Component/Error";
-import Home from "./Component/Home";
+import Home from "./Component/Top";
 import "./Style/App.scss";
 
 function App() {
