@@ -1,0 +1,63 @@
+$text_light_color: #f4f5f7;
+$text_dark_color: #0f0f0f;
+$main_color: #90f59a;
+$container_border: 5px solid #d4d4d48e;
+
+.work_container {
+  height: 100vh;
+  background-color: $text_light_color;
+  border-top: $container_border;
+  border-bottom: $container_border;
+
+  .work_wrapper {
+    padding-top: 90px;
+
+    .responsive {
+      position: relative;
+      width: 200px;
+      top: -500px;
+      left: 360px;
+      text-align: center;
+      justify-content: center;
+      margin-right: auto;
+    }
+
+    .engineer {
+      position: relative;
+      top: 400px;
+      left: 100px;
+      width: 400px;
+      text-align: center;
+      justify-content: center;
+      margin-right: auto;
+    }
+
+    .comment {
+      font-size: 48px;
+      position: relative;
+      top: -200px;
+      left: 200px;
+      text-align: center;
+      justify-content: center;
+      margin-right: auto;
+    }
+
+    .skill_container{
+        position: relative;
+        font-size: 24px;
+        width: 700px;
+        height: 200px;
+        top: -200px;
+        left: 800px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid $main_color;
+        border-radius: 25px;
+
+        .skill_box{
+            margin-top: 40px;
+        }
+    }
+  }
+}

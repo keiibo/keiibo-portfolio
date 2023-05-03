@@ -1,0 +1,9 @@
+$text_light_color: #f4f5f7;
+$text_dark_color: #0f0f0f;
+$main_color: #90f59a;
+$container_border: 5px solid #d4d4d48e;
+
+.portfolio_container{
+    height: 100vh;
+    border-bottom: $container_border;
+}

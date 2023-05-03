@@ -91,20 +91,3 @@ $container_border: 5px solid #d4d4d48e;
   }
 }
 
-.work_container {
-  height: 100vh;
-  background-color: $text_light_color;
-  border-top: $container_border;
-  border-bottom: $container_border;
-  .work_wrapper {
-    padding-top: 90px;
-    .engineer {
-      width: 500px;
-      height: 500px;
-      text-align: center;
-      justify-content: center;
-      margin-right: auto;
-      border-radius: 50%;
-    }
-  }
-}
