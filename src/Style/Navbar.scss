@@ -1,5 +1,7 @@
-$text_color: #f4f5f7;
+$text_light_color: #f4f5f7;
+$text_dark_color: #0f0f0f;
 $main_color: #90f59a;
+$container_border: 5px solid #d4d4d48e;
 
 header {
   position: fixed;
@@ -28,7 +30,7 @@ header {
       height: 100%;
       padding: 0 10px;
       text-decoration: none;
-      color: $text_color;
+      color: $text_light_color;
     }
 
     .nav_href {
@@ -37,12 +39,12 @@ header {
       border-radius: 25px;
       transition: all 0.7s ease-in-out;
       &:hover {
-        background-color: $text_color;
+        background-color: $text_light_color;
         color: $main_color;
       }
     }
     .mode_tag {
-      background-color: $text_color;
+      background-color: $text_light_color;
       color: $main_color;
       border-radius: 25px;
     }
