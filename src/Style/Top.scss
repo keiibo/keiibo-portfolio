@@ -1,0 +1,110 @@
+$text_light_color: #f4f5f7;
+$text_dark_color: #0f0f0f;
+$main_color: #90f59a;
+$container_border: 5px solid #d4d4d48e;
+
+//背景画像
+.bg_container {
+  background-image: url("../Image/bg.png");
+  background-attachment: fixed;
+  .bg_opacity {
+    background-color: #f4f5f7d4;
+  }
+}
+
+.top_container {
+  .top_page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title_container {
+      padding: 0 220px;
+      display: flex;
+      align-items: center;
+      .top_title {
+        color: $text_dark_color;
+        font-size: 84px;
+        letter-spacing: 6px;
+        animation: title 1s ease-in-out 0.5s forwards;
+        opacity: 0;
+        @keyframes title {
+          0% {
+            transform: translateY(100px);
+          }
+          100% {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      }
+      .in_love {
+        width: 500px;
+        height: 385.766px;
+        margin-left: auto;
+      }
+    }
+  }
+
+  .scroll_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .scroll_btn {
+      position: relative;
+      top: 75px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 75px;
+      height: 75px;
+      background-color: $main_color;
+      border-radius: 50%;
+      text-decoration: none;
+      transition: background-color 0.3s;
+      animation: moveUpDown 1.5s linear infinite;
+      &:hover {
+        background-color: #bae9a0;
+      }
+      @keyframes moveUpDown {
+        0% {
+          top: 0;
+        }
+        50% {
+          top: 30px;
+        }
+        100% {
+          top: 0;
+        }
+      }
+
+      .scroll_span {
+        width: 20px;
+        height: 20px;
+        border-bottom: 2px solid $text_light_color;
+        border-left: 2px solid $text_light_color;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.work_container {
+  height: 100vh;
+  background-color: $text_light_color;
+  border-top: $container_border;
+  border-bottom: $container_border;
+  .work_wrapper {
+    padding-top: 90px;
+    .engineer {
+      width: 500px;
+      height: 500px;
+      text-align: center;
+      justify-content: center;
+      margin-right: auto;
+      border-radius: 50%;
+    }
+  }
+}
