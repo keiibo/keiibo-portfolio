@@ -6,7 +6,7 @@ import Top from "./Component/Top";
 
 function App() {
   return (
-    <div className="container">
+    <div className="app container">
       <Router>
         <Navbar /> {/* ナビバーのコンポーネント */}
         <Routes>
