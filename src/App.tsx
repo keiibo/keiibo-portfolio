@@ -4,7 +4,7 @@ import Navbar from "./Header/Navbar";
 import Error from "./Component/Error";
 import Top from "./Component/Top";
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="app container">
       <Router>
@@ -21,6 +21,6 @@ function App() {
       </Router>
     </div>
   );
-}
+};
 
 export default App;
