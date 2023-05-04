@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../Style/Navbar.scss";
+
 const Navbar: React.FC  = () => {
   //現在のページの状態を見てナビにクラス.mode_tagを付与する
   const location = useLocation();
@@ -13,7 +14,7 @@ const Navbar: React.FC  = () => {
     <header>
       <nav className="navbar">
         <h1 className="title">
-          <Link to="/">Keiibo</Link>
+          <Link to="/">Keiibo House</Link>
         </h1>
         <ul className="nav_list">
           <li className="nav_item">

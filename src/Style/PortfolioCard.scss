@@ -1,0 +1,49 @@
+/* 変数 */
+$border_radius: 10px;
+$text_light_color: #f4f5f7;
+$text_dark_color: #0f0f0f;
+$main_color: #90f59a;
+$container_border: 5px solid #d4d4d48e;
+
+/* グリッドアイテムのコンテナ */
+.grid_item_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* グリッドアイテムのリンク */
+.grid-item {
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+  text-decoration: none;
+  border-radius: $border_radius;
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+/* 作品画像のコンテナ */
+.work_image {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
+
+/* 作品のタイトル */
+.work_title {
+  width: 100%;
+  font-size: 18px;
+  color: $text_dark_color;
+  text-align: center;
+}

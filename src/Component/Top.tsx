@@ -5,7 +5,7 @@ import "../Style/Top_portfolio.scss";
 import inLove from "../Image/inLove.svg";
 import engineer from "../Image/engineer.svg";
 import responsive from "../Image/responsive.svg";
-import Portfolio from "./Portfolio";
+import PortfolioTile from "./PortfolioTile";
 
 const Top: React.FC = () => {
   return (
@@ -50,8 +50,8 @@ const Top: React.FC = () => {
         </section>
         <section className="portfolio_container">
           <div className="portfolio_wrapper">
-            <h2 className="portfolio_title">私はこんなものを作っています</h2>
-            <Portfolio />
+            <h2 className="portfolio_title">例えばこんなものを作れます</h2>
+            <PortfolioTile />
           </div>
           <div className="more_container">
             <a href="/works" className="more_href">
