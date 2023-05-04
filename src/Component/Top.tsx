@@ -5,8 +5,9 @@ import "../Style/Top_portfolio.scss";
 import inLove from "../Image/inLove.svg";
 import engineer from "../Image/engineer.svg";
 import responsive from "../Image/responsive.svg";
+import Portfolio from "./Portfolio";
 
-const Top = () => {
+const Top: React.FC = () => {
   return (
     <div className="bg_container">
       <div className="bg_opacity">
@@ -47,7 +48,17 @@ const Top = () => {
             </div>
           </div>
         </section>
-        <section className="portfolio_container"></section>
+        <section className="portfolio_container">
+          <div className="portfolio_wrapper">
+            <h2 className="portfolio_title">私はこんなものを作っています</h2>
+            <Portfolio />
+          </div>
+          <div className="more_container">
+            <a href="/works" className="more_href">
+              <span className="more_btn">more...</span>
+            </a>
+          </div>
+        </section>
       </div>
     </div>
   );

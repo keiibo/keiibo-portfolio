@@ -62,11 +62,13 @@ $container_border: 5px solid #d4d4d48e;
       height: 75px;
       background-color: $main_color;
       border-radius: 50%;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
       text-decoration: none;
       transition: background-color 0.3s;
       animation: moveUpDown 1.5s linear infinite;
       &:hover {
         background-color: #bae9a0;
+        background-image: linear-gradient(to bottom, #6bc878, #4ca764);
       }
       @keyframes moveUpDown {
         0% {
@@ -90,4 +92,3 @@ $container_border: 5px solid #d4d4d48e;
     }
   }
 }
-
