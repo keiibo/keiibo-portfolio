@@ -12,8 +12,8 @@ const Footer = () => {
 
   return (
     <footer>
-      <nav className="navbar">
-        <h1 className="title">
+      <nav className="footer_navbar">
+        <h1 className="footer_title">
           <Link to="/">Keiibo House</Link>
         </h1>
         <p className="copyright">© 2023 Keiibo House All Rights Reserved.</p>

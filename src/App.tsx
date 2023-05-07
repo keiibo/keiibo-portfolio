@@ -4,6 +4,7 @@ import Navbar from "./Header/Navbar";
 import Error from "./Component/Error";
 import Top from "./Component/Top";
 import Footer from "./Component/Footer";
+import About from "./Component/About";
 
 const App: React.FC = () => {
   return (
@@ -13,7 +14,7 @@ const App: React.FC = () => {
         <Routes>
           {/* ルーティングの制御が行える */}
           <Route path="/" element={<Top />} />
-          {/* <Route path="/about" element={<About />} /> */}
+          <Route path="/about" element={<About />} />
           {/* <Route path="/works" element={<Works />} /> */}
 
           <Route path="*" element={<Error />} />
