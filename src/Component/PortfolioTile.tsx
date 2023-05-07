@@ -1,6 +1,7 @@
 import React from "react";
 import PortfolioCard from "./PortfolioCard";
 import "../Style/PortfolioTile.scss";
+import keiibo_house from "../Image/keiibo_house.png";
 
 const PortfolioTile: React.FC = () => {
   interface Work {
@@ -11,49 +12,49 @@ const PortfolioTile: React.FC = () => {
 
   const works: Work[] = [
     {
-      name: "作品1",
-      url: "https://www.google.com/",
-      img: "https://example.com/image1.jpg",
+      name: "Keiibo House",
+      url: "https://keiibo-portfolio.vercel.app/",
+      img: keiibo_house,
     },
     {
       name: "作品2",
       url: "https://www.google.com/",
-      img: "https://example.com/image2.jpg",
+      img: "https://placehold.jp/3d4070/ffffff/450x240.png?text=None...",
     },
     {
       name: "作品3",
       url: "https://www.google.com/",
-      img: "https://example.com/image3.jpg",
+      img: "https://placehold.jp/3d4070/ffffff/450x240.png?text=None...",
     },
     {
       name: "作品4",
       url: "https://www.google.com/",
-      img: "https://example.com/image4.jpg",
+      img: "https://placehold.jp/3d4070/ffffff/450x240.png?text=None...",
     },
     {
       name: "作品5",
       url: "https://www.google.com/",
-      img: "https://example.com/image5.jpg",
+      img: "https://placehold.jp/3d4070/ffffff/450x240.png?text=None...",
     },
     {
       name: "作品6",
       url: "https://www.google.com/",
-      img: "https://example.com/image6.jpg",
+      img: "https://placehold.jp/3d4070/ffffff/450x240.png?text=None...",
     },
     {
       name: "作品7",
       url: "https://www.google.com/",
-      img: "https://example.com/image7.jpg",
+      img: "https://placehold.jp/3d4070/ffffff/450x240.png?text=None...",
     },
     {
       name: "作品8",
       url: "https://www.google.com/",
-      img: "https://example.com/image8.jpg",
+      img: "https://placehold.jp/3d4070/ffffff/450x240.png?text=None...",
     },
     {
       name: "作品9",
       url: "https://www.google.com/",
-      img: "https://example.com/image9.jpg",
+      img: "https://placehold.jp/3d4070/ffffff/450x240.png?text=None...",
     },
   ];
 
@@ -62,7 +63,12 @@ const PortfolioTile: React.FC = () => {
   return (
     <div className="grid-container">
       {works.slice(0, max).map((work: Work, index: number) => (
-        <PortfolioCard name={work.name} index={index} img={work.img} />
+        <PortfolioCard
+          name={work.name}
+          index={index}
+          img={work.img}
+          url={work.url}
+        />
       ))}
     </div>
   );

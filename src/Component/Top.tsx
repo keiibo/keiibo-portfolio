@@ -56,6 +56,7 @@ const Top: React.FC = () => {
             <PortfolioTile />
           </div>
           <div className="more_container">
+            <p>ポートフォリオページではより多数の作成物を掲示しています！</p>
             <a href="/works" className="more_href">
               <span className="more_btn">もっと見る</span>
             </a>
