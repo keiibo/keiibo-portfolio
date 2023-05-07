@@ -1,0 +1,93 @@
+$text_light_color: #f4f5f7;
+$text_dark_color: #0f0f0f;
+$main_color: #90f59a;
+$container_border: 5px solid #d4d4d48e;
+
+/* お問い合わせフォームのコンテナ */
+.contact_container {
+  position: relative;
+  height: 100vh;
+  background-color: $text_light_color;
+  border-top: $container_border;
+ 
+}
+
+.contact_wrapper {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* お問い合わせフォームのタイトル */
+.contact_title {
+  font-size: 36px;
+  color: $text_dark_color;
+}
+
+/* お問い合わせフォーム */
+.contact_form {
+  width: 100%;
+  max-width: 900px;
+  margin-bottom: 60px;
+
+  /* フォーム */
+  input,
+  textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #afafaf;
+    background-color: transparent;
+    color: $text-dark-color;
+    font-size: 18px;
+    outline: none;
+    resize: none;
+
+    &::placeholder {
+      color: rgba($text-dark-color, 0.3);
+    }
+
+    &:focus {
+      border-bottom-color: $text-dark-color;
+    }
+  }
+
+  input {
+    margin-bottom: 60px;
+  }
+}
+
+/* 送信ボタン */
+.submit_button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: $main_color;
+  background-image: linear-gradient(to bottom, #90f59a, #6bc878);
+  border: none;
+  border-radius: 25px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  color: $text_light_color;
+  font-size: 16px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    background-color: #6bc878;
+    background-image: linear-gradient(to bottom, #6bc878, #4ca764);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+    &::before {
+      transform: scaleX(1);
+    }
+  }
+}
+.contact_svg {
+  position: absolute;
+  left: 80px;
+  bottom: 60px;
+  width: 400px; // 画像のサイズを調整する必要があれば、ここを変更
+}
