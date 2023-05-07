@@ -7,7 +7,6 @@ import inLove from "../Image/inLove.svg";
 import engineer from "../Image/engineer.svg";
 import responsive from "../Image/responsive.svg";
 import contact from "../Image/contact.svg";
-import woman_dev from "../Image/dev_woman.svg";
 import PortfolioTile from "./PortfolioTile";
 
 const Top: React.FC = () => {
