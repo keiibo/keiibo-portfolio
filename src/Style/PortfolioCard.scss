@@ -1,9 +1,9 @@
 /* 変数 */
-$border_radius: 10px;
+$border_radius: 2px;
 $text_light_color: #f4f5f7;
 $text_dark_color: #0f0f0f;
 $main_color: #90f59a;
-$container_border: 5px solid #d4d4d48e;
+$container_border: 3px solid #d4d4d48e;
 
 /* グリッドアイテムのコンテナ */
 .grid_item_box {
@@ -15,12 +15,15 @@ $container_border: 5px solid #d4d4d48e;
 
 /* グリッドアイテムのリンク */
 .grid-item {
-  width: 100%;
+  width: 450px;
+  height: 240px;
   transition: transform 0.3s ease-in-out;
   text-decoration: none;
-  border-radius: $border_radius;
+
   &:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
+    box-shadow: 0px 10px 34px -15px rgba(0, 0, 0, 0.5);
+    border: none;
   }
 }
 

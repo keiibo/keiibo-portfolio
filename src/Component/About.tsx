@@ -8,12 +8,12 @@ import portfolio_fb from "../Image/portfolio_fb.svg";
 
 const About = () => {
   const github_link = "https://github.com/keiibo";
-  const twitter_link = "https://twitter.com/zako_se_desuyo";
+  const twitter_link = "https://twitter.com/keiibo_engineer";
 
   return (
     <section className="about_container">
-      <img src={profile} alt="" className="profile" />
-      <img src={portfolio_fb} alt="" className="profile_fb" />
+      <img src={profile} alt="" className="profile img_anime" />
+      <img src={portfolio_fb} alt="" className="profile_fb img_anime" />
       <div className="about_wrapper">
         <div className="title_container">
           <h1 className="about_title">About Me</h1>
