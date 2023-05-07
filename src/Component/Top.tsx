@@ -1,10 +1,13 @@
 import React from "react";
-import "../Style/Top_top.scss";
-import "../Style/Top_work.scss";
-import "../Style/Top_portfolio.scss";
+import "../Style/Top/Top_top.scss";
+import "../Style/Top/Top_work.scss";
+import "../Style/Top/Top_portfolio.scss";
+import "../Style/Top/Top_contact.scss";
 import inLove from "../Image/inLove.svg";
 import engineer from "../Image/engineer.svg";
 import responsive from "../Image/responsive.svg";
+import contact from "../Image/contact.svg";
+import woman_dev from "../Image/dev_woman.svg";
 import PortfolioTile from "./PortfolioTile";
 
 const Top: React.FC = () => {
@@ -55,8 +58,38 @@ const Top: React.FC = () => {
           </div>
           <div className="more_container">
             <a href="/works" className="more_href">
-              <span className="more_btn">more...</span>
+              <span className="more_btn">もっと見る</span>
             </a>
+          </div>
+        </section>
+        <section className="contact_container" id="contact">
+          <img src={contact} alt="contact" className="contact_svg" />
+          <div className="contact_wrapper">
+            <h2 className="contact_title">お問い合わせはこちらから</h2>
+            <form className="contact_form">
+              <div className="form_group">
+                <input type="text" id="name" name="name" placeholder="お名前" />
+              </div>
+              <div className="form_group">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="メールアドレス"
+                />
+              </div>
+              <div className="form_group">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows={5}
+                  placeholder="お問い合わせ内容"
+                ></textarea>
+              </div>
+            </form>
+            <button type="submit" className="submit_button">
+              送信
+            </button>
           </div>
         </section>
       </div>

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Header/Navbar";
 import Error from "./Component/Error";
 import Top from "./Component/Top";
+import Footer from "./Component/Footer";
 
 const App: React.FC = () => {
   return (
@@ -18,6 +19,7 @@ const App: React.FC = () => {
           <Route path="*" element={<Error />} />
           {/* ページが見つからない時に出力されるエラーページ*/}
         </Routes>
+        <Footer /> {/* フッターのコンポーネント */}
       </Router>
     </div>
   );
