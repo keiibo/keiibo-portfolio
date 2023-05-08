@@ -3,7 +3,10 @@ import PortfolioCard from "./PortfolioCard";
 import "../Style/PortfolioTile.scss";
 import keiibo_house from "../Image/keiibo_house.png";
 
-const PortfolioTile: React.FC = () => {
+interface PortfolioTileProps {
+  max: number;
+}
+const PortfolioTile: React.FC<PortfolioTileProps> = (props) => {
   interface Work {
     name: string;
     url: string;
@@ -58,11 +61,9 @@ const PortfolioTile: React.FC = () => {
     },
   ];
 
-  const max: number = 3;
-
   return (
     <div className="grid-container">
-      {works.slice(0, max).map((work: Work, index: number) => (
+      {works.slice(0, props.max).map((work: Work, index: number) => (
         <PortfolioCard
           name={work.name}
           index={index}

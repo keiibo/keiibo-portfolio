@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "../Style/Navbar.scss";
 
-const Navbar: React.FC  = () => {
+const Navbar: React.FC = () => {
   //現在のページの状態を見てナビにクラス.mode_tagを付与する
   const location = useLocation();
   const { pathname } = location;
@@ -28,7 +28,7 @@ const Navbar: React.FC  = () => {
             </Link>
           </li>
           <li className="nav_item">
-            <Link to="/works" className={getLinkClassName("/works")}>
+            <Link to="/portfolio" className={getLinkClassName("/works")}>
               ポートフォリオ
             </Link>
           </li>

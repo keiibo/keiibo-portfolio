@@ -5,6 +5,7 @@ import Error from "./Component/Error";
 import Top from "./Component/Top";
 import Footer from "./Component/Footer";
 import About from "./Component/About";
+import Portfolio from "./Component/Portfolio";
 
 const App: React.FC = () => {
   return (
@@ -15,7 +16,7 @@ const App: React.FC = () => {
           {/* ルーティングの制御が行える */}
           <Route path="/" element={<Top />} />
           <Route path="/about" element={<About />} />
-          {/* <Route path="/works" element={<Works />} /> */}
+          <Route path="/portfolio" element={<Portfolio />} />
 
           <Route path="*" element={<Error />} />
           {/* ページが見つからない時に出力されるエラーページ*/}

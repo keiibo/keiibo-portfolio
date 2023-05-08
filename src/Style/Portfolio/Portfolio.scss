@@ -1,0 +1,37 @@
+$text_light_color: #f4f5f7;
+$text_dark_color: #0f0f0f;
+$main_color: #90f59a;
+$container_border: 5px solid #d4d4d48e;
+
+//背景画像
+.bg_container {
+  background-image: url("../../Image/bg.png");
+  background-attachment: fixed;
+  .bg_opacity {
+    background-color: #f4f5f7d4;
+  }
+}
+
+.portfolio_container {
+  position: relative;
+  height: 100%;
+}
+
+.portfolio_wrapper {
+  padding: 180px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.portfolio_title_container {
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  margin-bottom: 80px;
+  text-align: center;
+}
