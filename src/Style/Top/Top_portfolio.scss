@@ -3,14 +3,14 @@ $text_dark_color: #0f0f0f;
 $main_color: #90f59a;
 $container_border: 5px solid #d4d4d48e;
 
-.portfolio_container {
+.portfolio_top_container {
   height: 100vh;
   border-bottom: $container_border;
 
-  .portfolio_wrapper {
+  .portfolio_top_wrapper {
     padding-top: 90px;
 
-    .portfolio_title {
+    .portfolio_top_title {
       margin-top: 70px;
       font-size: 48px;
       text-align: center;

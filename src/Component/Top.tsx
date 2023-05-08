@@ -10,6 +10,7 @@ import contact from "../Image/contact.svg";
 import PortfolioTile from "./PortfolioTile";
 
 const Top: React.FC = () => {
+
   return (
     <div className="bg_container">
       <div className="bg_opacity">
@@ -50,14 +51,14 @@ const Top: React.FC = () => {
             </div>
           </div>
         </section>
-        <section className="portfolio_container">
-          <div className="portfolio_wrapper">
+        <section className="portfolio_top_container">
+          <div className="portfolio_top_wrapper">
             <h2 className="portfolio_title">例えばこんなものを作れます</h2>
-            <PortfolioTile />
+            <PortfolioTile max={3} />
           </div>
           <div className="more_container">
             <p>ポートフォリオページではより多数の作成物を掲示しています！</p>
-            <a href="/works" className="more_href">
+            <a href="/portfolio" className="more_href">
               <span className="more_btn">もっと見る</span>
             </a>
           </div>

@@ -1,9 +1,27 @@
 .grid-container {
-  width: 80%;
-  margin: 120px auto 0px auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 100px;
+  grid-gap: 20px;
   justify-items: center;
   align-items: center;
+}
+
+/* モバイルデバイスの場合、1列に設定 */
+@media only screen and (max-width: 767px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* タブレットデバイスの場合、2列に設定 */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* デスクトップデバイスの場合、3列に設定 */
+@media only screen and (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
