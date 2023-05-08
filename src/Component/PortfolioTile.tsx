@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import PortfolioCard from "./PortfolioCard";
 import "../Style/PortfolioTile.scss";
-import works from "../Json/works.json";
 import { firestore } from "../util/firebaseConfig";
 import { collection, getDocs } from "firebase/firestore";
 

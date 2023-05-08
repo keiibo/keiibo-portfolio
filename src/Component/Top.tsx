@@ -3,12 +3,19 @@ import "../Style/Top/Top_top.scss";
 import "../Style/Top/Top_work.scss";
 import "../Style/Top/Top_portfolio.scss";
 import "../Style/Top/Top_contact.scss";
-import inLove from "../Image/inLove.svg";
-import engineer from "../Image/engineer.svg";
-import responsive from "../Image/responsive.svg";
-import contact from "../Image/contact.svg";
 import PortfolioTile from "./PortfolioTile";
+
 const Top: React.FC = () => {
+  //SVG
+  const inLove_svg: string =
+    "https://firebasestorage.googleapis.com/v0/b/keiibo-portfolio.appspot.com/o/svg_icon%2FinLove.svg?alt=media&token=f4f50a0a-f7dd-4bf7-9513-0ba3408de2eb";
+  const engineer_svg: string =
+    "https://firebasestorage.googleapis.com/v0/b/keiibo-portfolio.appspot.com/o/svg_icon%2Fengineer.svg?alt=media&token=938ca21d-f5ef-46da-a2c4-2aa7461fe34e";
+  const responsive_svg: string =
+    "https://firebasestorage.googleapis.com/v0/b/keiibo-portfolio.appspot.com/o/svg_icon%2Fresponsive.svg?alt=media&token=26bcf864-875f-404c-94cc-4f6039c844e3";
+  const contact_svg: string =
+    "https://firebasestorage.googleapis.com/v0/b/keiibo-portfolio.appspot.com/o/svg_icon%2Fcontact.svg?alt=media&token=b362bb3a-3612-40d2-9f61-9446bf528d34";
+
   return (
     <div className="bg_container">
       <div className="bg_opacity">
@@ -17,7 +24,7 @@ const Top: React.FC = () => {
             <div className="title_container">
               <h1 className="top_title">Keiibo House</h1>
               <div className="in_love">
-                <img src={inLove} alt="inLove" />
+                <img src={inLove_svg} alt="inLove" />
               </div>
             </div>
             <div className="scroll_container">
@@ -30,14 +37,14 @@ const Top: React.FC = () => {
         <section className="work_container" id="career">
           <div className="work_wrapper">
             <div className="engineer">
-              <img src={engineer} alt="" />
+              <img src={engineer_svg} alt="" />
             </div>
             <p className="comment">
               私はフロント技術を得意とする
               <br />
               Webアプリエンジニアです
             </p>
-            <img src={responsive} alt="" className="responsive" />
+            <img src={responsive_svg} alt="" className="responsive" />
             <div className="skill_container">
               <div className="skill_box">
                 <p className="skill ">
@@ -51,7 +58,7 @@ const Top: React.FC = () => {
         </section>
         <section className="portfolio_top_container">
           <div className="portfolio_top_wrapper">
-            <h2 className="portfolio_title">例えばこんなものを作れます</h2>
+            <h2 className="portfolio_top_title">例えばこんなものを作れます</h2>
             <PortfolioTile max={3} />
           </div>
           <div className="more_container">
@@ -62,7 +69,7 @@ const Top: React.FC = () => {
           </div>
         </section>
         <section className="contact_container" id="contact">
-          <img src={contact} alt="contact" className="contact_svg" />
+          <img src={contact_svg} alt="contact" className="contact_svg" />
           <div className="contact_wrapper">
             <h2 className="contact_title">お問い合わせはこちらから</h2>
             <form className="contact_form">
