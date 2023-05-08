@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import PortfolioCard from "./PortfolioCard";
 import "../Style/PortfolioTile.scss";
-import keiibo_house from "../Image/keiibo_house.png";
+import works from "../Json/works.json";
+import { firestore } from "../util/firebaseConfig";
+import { collection, getDocs } from "firebase/firestore";
 
 interface PortfolioTileProps {
   max: number;
 }
+
 const PortfolioTile: React.FC<PortfolioTileProps> = (props) => {
   interface Work {
     name: string;
@@ -13,53 +16,19 @@ const PortfolioTile: React.FC<PortfolioTileProps> = (props) => {
     img: string;
   }
 
-  const works: Work[] = [
-    {
-      name: "Keiibo House",
-      url: "https://keiibo-portfolio.vercel.app/",
-      img: keiibo_house,
-    },
-    {
-      name: "作品2",
-      url: "https://www.google.com/",
-      img: "https://placehold.jp/3d4070/ffffff/450x240.png?text=None...",
-    },
-    {
-      name: "作品3",
-      url: "https://www.google.com/",
-      img: "https://placehold.jp/3d4070/ffffff/450x240.png?text=None...",
-    },
-    {
-      name: "作品4",
-      url: "https://www.google.com/",
-      img: "https://placehold.jp/3d4070/ffffff/450x240.png?text=None...",
-    },
-    {
-      name: "作品5",
-      url: "https://www.google.com/",
-      img: "https://placehold.jp/3d4070/ffffff/450x240.png?text=None...",
-    },
-    {
-      name: "作品6",
-      url: "https://www.google.com/",
-      img: "https://placehold.jp/3d4070/ffffff/450x240.png?text=None...",
-    },
-    {
-      name: "作品7",
-      url: "https://www.google.com/",
-      img: "https://placehold.jp/3d4070/ffffff/450x240.png?text=None...",
-    },
-    {
-      name: "作品8",
-      url: "https://www.google.com/",
-      img: "https://placehold.jp/3d4070/ffffff/450x240.png?text=None...",
-    },
-    {
-      name: "作品9",
-      url: "https://www.google.com/",
-      img: "https://placehold.jp/3d4070/ffffff/450x240.png?text=None...",
-    },
-  ];
+  const [works, setWorks] = useState<Work[]>([]);
+
+  useEffect(() => {
+    const fetchWorks = async () => {
+      const worksCollection = collection(firestore, "keiibo-portfolio");
+      const snapshot = await getDocs(worksCollection);
+      const data = snapshot.docs.map((doc) => doc.data() as Work);
+      setWorks(data);
+    };
+
+    fetchWorks();
+    console.log(works);
+  }, []);
 
   return (
     <div className="grid-container">

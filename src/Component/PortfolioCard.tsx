@@ -15,7 +15,6 @@ const PortfolioCard: React.FC<PortfolioProps> = ({ name, index, img, url }) => {
         <a href={url} target="_blank">
           <div className="work_image">
             <img src={img} alt="作品画像" />
-            {/* <img src={img} alt="" /> */}
           </div>
         </a>
       </div>
