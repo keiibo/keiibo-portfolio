@@ -1,26 +1,34 @@
 import React from "react";
 import "../Style/About/About_top.scss";
-import profile from "../Image/profile.svg";
 import { AiFillGithub } from "react-icons/ai";
 import { AiOutlineTwitter } from "react-icons/ai";
-import keii from "../Image/keii.png";
-import portfolio_fb from "../Image/portfolio_fb.svg";
 
-const About = () => {
-  const github_link = "https://github.com/keiibo";
-  const twitter_link = "https://twitter.com/keiibo_engineer";
+const About: React.FC = () => {
+  // link to github and twitter
+  const github_link:string = "https://github.com/keiibo";
+  const twitter_link:string = "https://twitter.com/keiibo_engineer";
+
+  //SVG
+  const profile_svg: string =
+    "https://firebasestorage.googleapis.com/v0/b/keiibo-portfolio.appspot.com/o/svg_icon%2Fprofile.svg?alt=media&token=0088a93a-c52d-4bee-95bd-e8b9f579d6c5";
+  const portfolio_fb_svg: string =
+    "https://firebasestorage.googleapis.com/v0/b/keiibo-portfolio.appspot.com/o/svg_icon%2Fportfolio_fb.svg?alt=media&token=69b81c6f-5f69-4ee5-a5cb-60a0796ff904";
+
+  //PNG
+  const keii_png: string =
+    "https://firebasestorage.googleapis.com/v0/b/keiibo-portfolio.appspot.com/o/keii.png?alt=media&token=d98c1160-d4b1-4879-891c-5b72d8f2bd4e";
 
   return (
     <section className="about_container">
-      <img src={profile} alt="" className="profile img_anime" />
-      <img src={portfolio_fb} alt="" className="profile_fb img_anime" />
+      <img src={profile_svg} alt="" className="profile img_anime" />
+      <img src={portfolio_fb_svg} alt="" className="profile_fb img_anime" />
       <div className="about_wrapper">
         <div className="title_container">
           <h1 className="about_title">About Me</h1>
           <h2>-私について-</h2>
         </div>
         <div className="img_box">
-          <img src={keii} alt="" className="keii" />
+          <img src={keii_png} alt="" className="keii" />
         </div>
         <div className="link_container">
           <div className="link_wrapper">

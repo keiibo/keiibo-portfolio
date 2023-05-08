@@ -2,10 +2,10 @@ $text_light_color: #f4f5f7;
 $text_dark_color: #0f0f0f;
 $main_color: #90f59a;
 $container_border: 5px solid #d4d4d48e;
-
+$bg_url: "https://firebasestorage.googleapis.com/v0/b/keiibo-portfolio.appspot.com/o/bg.png?alt=media&token=2e3330cc-4a8a-4044-9263-825f4eb75599";
 //背景画像
 .bg_container {
-  background-image: url("../../Image/bg.png");
+  background-image: url($bg_url);
   background-attachment: fixed;
   .bg_opacity {
     background-color: #f4f5f7d4;
