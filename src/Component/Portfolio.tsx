@@ -2,7 +2,7 @@ import React from "react";
 import PortfolioTile from "./PortfolioTile";
 import "../Style/Portfolio/Portfolio.scss";
 
-const Portfolio = () => {
+const Portfolio: React.FC = () => {
   return (
     <div className="bg_container">
       <div className="bg_opacity">
