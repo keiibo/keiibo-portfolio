@@ -8,9 +8,7 @@ import engineer from "../Image/engineer.svg";
 import responsive from "../Image/responsive.svg";
 import contact from "../Image/contact.svg";
 import PortfolioTile from "./PortfolioTile";
-
 const Top: React.FC = () => {
-
   return (
     <div className="bg_container">
       <div className="bg_opacity">
