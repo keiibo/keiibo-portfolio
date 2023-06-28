@@ -17,7 +17,7 @@ const Top: React.FC = () => {
     "https://firebasestorage.googleapis.com/v0/b/keiibo-portfolio.appspot.com/o/svg_icon%2Fcontact.svg?alt=media&token=b362bb3a-3612-40d2-9f61-9446bf528d34";
 
   const top: JSX.Element = (
-    <section className="top_container">
+    <section className="top_container" id="myself">
       <div className="top_page">
         <div className="title_container">
           <h1 className="top_title">Keiibo Portfolio</h1>
@@ -105,11 +105,19 @@ const Top: React.FC = () => {
     </section>
   );
 
+  const attention = {
+    color: "red",
+    fontSize: "18px",
+  };
+
   const form: JSX.Element = (
     <section className="contact_container" id="contact">
       <img src={contact_svg} alt="contact" className="contact_svg" />
       <div className="contact_wrapper">
-        <h2 className="contact_title">お問い合わせはこちらから</h2>
+        <h2 className="contact_title">
+          お問い合わせはこちらから
+          <span style={attention}>(現在使用できません)</span>
+        </h2>
         <form className="contact_form">
           <div className="form_group">
             <input type="text" id="name" name="name" placeholder="お名前" />
