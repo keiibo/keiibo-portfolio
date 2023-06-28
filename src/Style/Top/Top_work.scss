@@ -10,54 +10,49 @@ $container_border: 5px solid #d4d4d48e;
   border-bottom: $container_border;
 
   .work_wrapper {
-    padding-top: 90px;
+    padding: 120px;
 
-    .responsive {
-      position: relative;
-      width: 200px;
-      top: -500px;
-      left: 360px;
-      text-align: center;
-      justify-content: center;
-      margin-right: auto;
-    }
-
-    .engineer {
-      position: relative;
-      top: 400px;
-      left: 100px;
-      width: 400px;
-      text-align: center;
-      justify-content: center;
-      margin-right: auto;
-    }
-
-    .comment {
+    .work_title {
       font-size: 48px;
-      position: relative;
-      top: -200px;
-      left: 200px;
-      text-align: center;
-      justify-content: center;
-      margin-right: auto;
+      color: $text_dark_color;
+      margin-bottom: 30px;
+    }
+    .work_content_wrapper {
+      margin-left: 50px;
     }
 
-    .skill_container{
-        position: relative;
-        font-size: 24px;
-        width: 700px;
-        height: 200px;
-        top: -200px;
-        left: 800px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        border: 5px solid $main_color;
-        border-radius: 25px;
+    .work_content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-        .skill_box{
-            margin-top: 40px;
+      .work_content_title {
+        font-size: 30px;
+        font-weight: 700;
+        color: $text_dark_color;
+        margin-bottom: 10px;
+      }
+
+      .work_content_item {
+        display: flex;
+        margin-bottom: 30px;
+
+        .level_box {
+          margin-right: 48px;
         }
+
+        .level_box ul {
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 10px;
+        }
+      }
+
+      .work_content_text {
+        font-size: 16px;
+        color: $text_dark_color;
+        margin-bottom: 10px;
+      }
     }
   }
 }

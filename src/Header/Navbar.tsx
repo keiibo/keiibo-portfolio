@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
     <header>
       <nav className="navbar">
         <h1 className="title">
-          <Link to="/">Keiibo House</Link>
+          <Link to="/">Keiibo Portfolio</Link>
         </h1>
         <ul className="nav_list">
           <li className="nav_item">

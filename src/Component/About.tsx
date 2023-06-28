@@ -5,8 +5,8 @@ import { AiOutlineTwitter } from "react-icons/ai";
 
 const About: React.FC = () => {
   // link to github and twitter
-  const github_link:string = "https://github.com/keiibo";
-  const twitter_link:string = "https://twitter.com/keiibo_engineer";
+  const github_link: string = "https://github.com/keiibo";
+  const twitter_link: string = "https://twitter.com/keiibo_engineer";
 
   //SVG
   const profile_svg: string =
@@ -59,7 +59,7 @@ const About: React.FC = () => {
           <br />
           その後、業務をこなしながら自己研鑽に励み、フロントエンドエンジニアとしてスキルを磨いてきました。
           <br />
-          ReactやVercelなどのモダンな技術を習得し、日々技術力の向上に努めています。
+          Reactを中心としたモダンな技術を習得し、日々技術力の向上に努めています。
           <br />
           明るく前向きな姿勢で、常に丁寧な仕事を心掛けております。
           <br />
