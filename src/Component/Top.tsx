@@ -16,88 +16,135 @@ const Top: React.FC = () => {
   const contact_svg: string =
     "https://firebasestorage.googleapis.com/v0/b/keiibo-portfolio.appspot.com/o/svg_icon%2Fcontact.svg?alt=media&token=b362bb3a-3612-40d2-9f61-9446bf528d34";
 
+  const top: JSX.Element = (
+    <section className="top_container">
+      <div className="top_page">
+        <div className="title_container">
+          <h1 className="top_title">Keiibo Portfolio</h1>
+          <div className="in_love">
+            <img src={inLove_svg} alt="inLove" />
+          </div>
+        </div>
+        <div className="scroll_container">
+          <a href="#career" className="scroll_btn">
+            <span className="scroll_span"></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+
+  const work: JSX.Element = (
+    <section className="work_container" id="career">
+      <div className="work_wrapper">
+        <h2 className="work_title">私にできること</h2>
+        <div className="work_content">
+          <img src={engineer_svg} alt="engineer" className="engineer" />
+          <div className="work_content_wrapper">
+            <div className="works_contents_container">
+              <h3 className="work_content_title">Webアプリ開発</h3>
+              <p className="work_content_text">
+                主にReactを用いたSPAの開発ができます。
+                <br />
+                また、Next.jsを用いたSSGやSSRの開発も可能です。
+                <br />
+                素のJavaScriptでの開発も可能ですが、TypeScriptを用いた開発を推奨しています。
+              </p>
+            </div>
+            <div className="works_contents_container">
+              <h3 className="work_content_title">主要な技術スタック</h3>
+              <div className="work_content_item">
+                <div className="level_box">
+                  <h4>レベル松</h4>
+                  <ul>
+                    <li>HTML/CSS</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Git/GitHub</li>
+                    <li>Chakra UI</li>
+                  </ul>
+                </div>
+                <div className="level_box">
+                  <h4>レベル竹</h4>
+                  <ul>
+                    <li>TypeScript</li>
+                    <li>Next.js</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                  </ul>
+                </div>
+                <div className="level_box">
+                  <h4>レベル梅</h4>
+                  <ul>
+                    <li>SQL</li>
+                    <li>Vercel</li>
+                    <li>Firebase</li>
+                    <li>AWS</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+
+  const portfolio: JSX.Element = (
+    <section className="portfolio_top_container">
+      <div className="portfolio_top_wrapper">
+        <h2 className="portfolio_top_title">例えばこんなものを作れます</h2>
+        <PortfolioTile max={3} />
+      </div>
+      <div className="more_container">
+        <p>今後、より多数の作成物を掲示していきます！(今後)</p>
+        <a href="/portfolio" className="more_href">
+          <span className="more_btn">もっと見る</span>
+        </a>
+      </div>
+    </section>
+  );
+
+  const form: JSX.Element = (
+    <section className="contact_container" id="contact">
+      <img src={contact_svg} alt="contact" className="contact_svg" />
+      <div className="contact_wrapper">
+        <h2 className="contact_title">お問い合わせはこちらから</h2>
+        <form className="contact_form">
+          <div className="form_group">
+            <input type="text" id="name" name="name" placeholder="お名前" />
+          </div>
+          <div className="form_group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="メールアドレス"
+            />
+          </div>
+          <div className="form_group">
+            <textarea
+              id="message"
+              name="message"
+              rows={5}
+              placeholder="お問い合わせ内容"
+            ></textarea>
+          </div>
+        </form>
+        <button type="submit" className="submit_button">
+          送信
+        </button>
+      </div>
+    </section>
+  );
+
   return (
     <div className="bg_container">
       <div className="bg_opacity">
-        <section className="top_container">
-          <div className="top_page">
-            <div className="title_container">
-              <h1 className="top_title">Keiibo House</h1>
-              <div className="in_love">
-                <img src={inLove_svg} alt="inLove" />
-              </div>
-            </div>
-            <div className="scroll_container">
-              <a href="#career" className="scroll_btn">
-                <span className="scroll_span"></span>
-              </a>
-            </div>
-          </div>
-        </section>
-        <section className="work_container" id="career">
-          <div className="work_wrapper">
-            <div className="engineer">
-              <img src={engineer_svg} alt="" />
-            </div>
-            <p className="comment">
-              私はフロント技術を得意とする
-              <br />
-              Webアプリエンジニアです
-            </p>
-            <img src={responsive_svg} alt="" className="responsive" />
-            <div className="skill_container">
-              <div className="skill_box">
-                <p className="skill ">
-                  HTML/CSS/JavaScript/TypeScript/React/Java/
-                </p>
-                <p className="skill ">Git/GitHub/AWS CodeCommit/</p>
-                <p className="skill">Teams/BackLog/MS Office</p>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="portfolio_top_container">
-          <div className="portfolio_top_wrapper">
-            <h2 className="portfolio_top_title">例えばこんなものを作れます</h2>
-            <PortfolioTile max={3} />
-          </div>
-          <div className="more_container">
-            <p>ポートフォリオページではより多数の作成物を掲示しています！</p>
-            <a href="/portfolio" className="more_href">
-              <span className="more_btn">もっと見る</span>
-            </a>
-          </div>
-        </section>
-        <section className="contact_container" id="contact">
-          <img src={contact_svg} alt="contact" className="contact_svg" />
-          <div className="contact_wrapper">
-            <h2 className="contact_title">お問い合わせはこちらから</h2>
-            <form className="contact_form">
-              <div className="form_group">
-                <input type="text" id="name" name="name" placeholder="お名前" />
-              </div>
-              <div className="form_group">
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="メールアドレス"
-                />
-              </div>
-              <div className="form_group">
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={5}
-                  placeholder="お問い合わせ内容"
-                ></textarea>
-              </div>
-            </form>
-            <button type="submit" className="submit_button">
-              送信
-            </button>
-          </div>
-        </section>
+        {top}
+        {work}
+        {portfolio}
+        {form}
       </div>
     </div>
   );
